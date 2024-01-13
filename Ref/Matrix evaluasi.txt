@@ -1,0 +1,15 @@
+## Bing
+Precision, Recall, dan F1-Score adalah metrik evaluasi yang penting dalam model deep learning, khususnya untuk masalah klasifikasi.
+Precision mengukur rasio prediksi positif yang benar dari semua prediksi positif. Dengan kata lain, Precision menunjukkan seberapa sering model membuat prediksi positif yang benar. Nilai Precision berkisar antara 0 dan 1.
+Recall mengukur rasio dari data positif yang benar yang ditemukan dari seluruh data positif. Recall menggambarkan seberapa baik model dapat menangkap semua instance yang seharusnya positif.
+F1-Score adalah rata-rata harmonik dari Precision dan Recall. F1-Score mencoba mencari keseimbangan antara Precision dan Recall. F1-Score memberikan gambaran yang lebih seimbang tentang kinerja model. Nilai F1-Score berkisar antara 0 dan 1. Nilai F1-Score yang sempurna adalah 1, yang menunjukkan bahwa model memiliki nilai presisi-recall yang sempurna. Sebaliknya, nilai F1-Score yang buruk adalah 0, yang menunjukkan bahwa model memiliki nilai presisi atau recall yang rendah.
+Kedua metrik ini dihitung berdasarkan empat komponen dari Confusion Matrix:
+- True Positive (TP): Kasus dimana data diprediksi positif dan sebenarnya adalah positif.
+- True Negative (TN): Kasus dimana data diprediksi negatif dan sebenarnya adalah negatif.
+- False Positive (FP): Kasus dimana data diprediksi positif tetapi sebenarnya adalah negatif.
+- False Negative (FN): Kasus dimana data diprediksi negatif tetapi sebenarnya adalah positif.
+Formula untuk menghitung Precision, Recall, dan F1-Score adalah sebagai berikut:
+- Precision = $$\frac{TP}{TP + FP}$$
+- Recall = $$\frac{TP}{TP + FN}$$
+- F1-Score = $$2 \times \frac{Precision \times Recall}{Precision + Recall}$$
+Harap dicatat bahwa Precision dan Recall memiliki hubungan trade-off, di mana meningkatnya nilai salah satu parameter akan menurunkan nilai parameter lainnya. Oleh karena itu, pemilihan metrik evaluasi yang tepat sangat bergantung pada konteks dan tujuan spesifik dari model Anda.
